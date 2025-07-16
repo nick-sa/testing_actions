@@ -13,4 +13,4 @@ jobs:
       - run: echo "this is another run, I don't know what it does"
       - name: this is another name for ls play
       - run: ls ${{github.workspace}}
-      - run: echo "this status is ${{job.status}}
+      - run: echo "this status is ${{job.status}}"
