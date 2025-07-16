@@ -1,0 +1,17 @@
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub actions
+on: [push]
+jobs: 
+  Explore-Github-Actions exploring github actions: 
+    runs-on: ubuntu-latest
+    steps: 
+      - run: echo "this is the first echo from push in the github action exploring github exploring gightub actions"
+      - run: echo "this is the second run"
+      - run: echo "testing variables, branch ${{github.ref}}, and then there is runner operating system ${{runner.os}}, and then there is the repo ${{github.repository}} "
+      - name: name test 
+      - uses: actions/checkout@v4
+      - run: echo "this is another run, I don't know what it does"
+      - name: this is another name for ls play
+      - run: | 
+            ls ${{github.workspace}}
+      - run: echo "this status is ${{job.status}}
