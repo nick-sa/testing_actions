@@ -12,6 +12,5 @@ jobs:
       - uses: actions/checkout@v4
       - run: echo "this is another run, I don't know what it does"
       - name: this is another name for ls play
-      - run: | 
-            ls ${{github.workspace}}
+      - run: ls ${{github.workspace}}
       - run: echo "this status is ${{job.status}}
